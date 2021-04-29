@@ -1584,3 +1584,14 @@ header.bg__transparent{
         }
     }
 }
+
+
+.da__footer{
+    background: linear-gradient(180deg, rgba(0, 255, 111, 0.1) 0%, rgba(27, 146, 255, 0.1) 100%), #FFFFFF;;
+    &:before{
+        display: none;
+    }
+    .footer__container{
+        background-color: transparent;
+    }
+}
