@@ -69,4 +69,11 @@ $(".da__open-tab-btn").on("click", function (e) {
     $(this).toggleClass("active");
   })
   
+  $(".footer-btn").on("click", function(e){
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, 1000); 
+  })
+    
+  
+
 });
