@@ -68,6 +68,14 @@ $(".da__open-tab-btn").on("click", function (e) {
     $(this).parent().find("p").toggleClass("active");
     $(this).toggleClass("active");
   })
+
+  $(".comment__slider-da .body p").each(function(){
+    $(this).parent().find(".read-more").css("display","none");
+    if($(this).outerHeight() > 290){
+      $(this).height(290);
+      $(this).parent().find(".read-more").css("display","inline-block");
+    }
+  })
   
   $(".footer-btn").on("click", function(e){
     e.preventDefault();
